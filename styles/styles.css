@@ -2,6 +2,7 @@
 body {
     padding: 0;
     margin: 0;
+    font-family: "Georgia";
 }
 
 .container-main {
@@ -30,6 +31,8 @@ body {
 #header .head-images, #header h1 {
     float: left;
     margin: 5px;
+    font-family: "Arial";
+    font-weight: normal;
 }
 
 #header .head-images {
@@ -124,6 +127,10 @@ body {
 #weather .weather-titles h2, p {
     padding: 0;
     margin: 0;
+}
+
+#weather h2 {
+    font-weight: normal;
 }
 
 .weather-container .current-weather {
