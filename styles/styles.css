@@ -9,6 +9,16 @@ body {
     margin: 0 auto;
 }
 
+.left {
+    float: left;
+    margin: 5px 0 0 5px;
+}
+
+.right {
+    float: right;
+    margin: 5px 5px 0 0;
+}
+
 
 /* Header */
 
@@ -74,15 +84,6 @@ body {
     margin-top: 30px;
 }
 
-.daily-news .left {
-    float: left;
-    margin: 5px 0 0 5px;
-}
-
-.daily-news .right {
-    float: right;
-    margin: 5px 5px 0 0;
-}
 
 .daily-news .news {
     display: block;
@@ -150,4 +151,35 @@ body {
 #weather .weather-image {
     width: 180px;
     height: 180px;
+}
+
+
+/*Latest News Section*/
+
+#latest-news {
+    margin-top: 30px;
+}
+
+#latest-news .latest-news-title {
+    overflow: hidden;
+    box-shadow: 0 2px 2px -2px black;
+}
+
+#latest-news .latest-news-info {
+    overflow: hidden;
+    margin: 20px;
+}
+
+#latest-news .latest-news-img {
+    float: left;
+    margin: 5px;
+}
+
+#latest-news .latest-news-img img {
+    width: 120px;
+    height: 80px;
+}
+
+.latest-news-info .news {
+    margin: 0 0 10px 0;
 }
