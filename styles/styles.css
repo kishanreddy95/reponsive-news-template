@@ -90,3 +90,27 @@ body {
     box-shadow: 0 2px 5px -2px gray;
 }
 
+
+/*Scorecard Section*/
+
+#score-table {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    margin-top: 40px;
+}
+
+#score-table .score-title{
+    color: gray;
+}
+
+#score-table .left {
+    text-align: left;
+    padding: 5px;
+}
+
+#score-table td {
+    text-align: center;
+    padding: 5px;
+}
+
