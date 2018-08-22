@@ -86,7 +86,6 @@ body {
 
 
 .daily-news .news {
-    display: block;
     padding: 10px;
     box-shadow: 0 2px 5px -2px gray;
 }
@@ -180,6 +179,18 @@ body {
     height: 80px;
 }
 
-.latest-news-info .news {
-    margin: 0 0 10px 0;
+/*Footer*/
+
+#footer {
+    overflow: hidden;
+    margin: 10px;
+    box-shadow: 0 4px 2px -2px gray, 0 -4px 2px -2px gray;
+}
+
+#footer a {
+    float: left;
+    text-decoration: none;
+    text-align: left;
+    color: black;
+    padding: 20px;
 }
