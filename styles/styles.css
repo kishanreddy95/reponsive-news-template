@@ -1,0 +1,11 @@
+/*Global Styles*/
+
+body {
+    width: 800px;
+}
+
+.container-main {
+    display: flex;
+    flex-direction: column;
+}
+
