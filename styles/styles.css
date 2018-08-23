@@ -65,9 +65,10 @@ body {
 .daily-news-titles {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     font-size: 0.75em;
-    margin: 0 5px 0 5px;
+    margin-top: 2em;
+    padding: 1em;
 }
 
 .news {
@@ -110,8 +111,42 @@ body {
     margin: 0;
 }
 
+.current-weather {
+    display: flex;
+    align-items: center;
+}
+
 .weather-imgs .weekly-weather {
     display: flex;
     justify-content: space-around;
     margin: 2em 0 0 0;
+}
+
+.weekly-weather p {
+    text-align: center;
+    font-size: 0.75em;
+}
+
+/*Latest News Section*/
+
+.latest-news-headings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.75em;
+    margin-top: 2em;
+    padding: 1em;
+}
+
+.latest-news-info {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.5em;
+    padding: 0.25em;
+}
+
+.latest-news-info img{
+    height: 60px;
+    width: 80px;
+    padding: 10px;
 }
