@@ -67,16 +67,33 @@ body {
     justify-content: space-between;
     align-items: flex-end;
     font-size: 0.75em;
+    margin: 0 5px 0 5px;
 }
 
 .news {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding: 2px;
 }
 
 .news p {
     width: 100%;
     box-shadow: 0 2px 5px -2px gray;
     font-size: 0.75em;
+    margin-left: 2px;
+}
+
+/*Scorecard Section*/
+
+.scorecard .score-headings {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.scores-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
