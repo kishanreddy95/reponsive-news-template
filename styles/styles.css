@@ -97,3 +97,21 @@ body {
     flex-direction: row;
     justify-content: space-around;
 }
+
+/*Weather Section*/
+
+.weather-headings {
+    display:flex;
+    flex-direction: column;
+    margin: 1em 0 0 1em;
+}
+
+.weather p,h3 {
+    margin: 0;
+}
+
+.weather-imgs .weekly-weather {
+    display: flex;
+    justify-content: space-around;
+    margin: 2em 0 0 0;
+}
