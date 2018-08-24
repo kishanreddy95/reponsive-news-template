@@ -201,38 +201,90 @@ body {
         margin: auto;
     }
 
-    
+    .container-main {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
 
     /*Header Section*/
 
     #header {
-        justify-content: center;
+        justify-content: flex-start;
         padding: 0.25em;
+        order: 1;
+        flex-basis: 100%;
     }
 
     /*Navigation Section*/
 
     #nav-bar {
         margin: 0.50em;
+        order:2;
+        flex-basis: 100%;
     }
 
     /*Breaking News Section*/
 
     .breaking-news {
         margin-top: 0.25em;
+        order:3;
+        flex-basis: 60%;
     }
 
     .breaking-news-items {
-        height: 60px;
+        height: 80px;
         padding: 0.75em;
+    }
+
+    /*Daily News Section*/
+
+    .daily-news {
+        order: 5;
+        flex-basis: 100%;
+    }
+
+    /*Scorecard Section*/
+
+    .scorecard {
+        order: 6;
+        flex-basis: 100%;
+    }
+
+    /*Weather Section*/
+
+    .weather {
+        order: 4;
+        flex-basis: 40%;
     }
 
     /*Latest News*/
 
-    .latest-news-info img {
-        width: 80px;
-        height: 60px;
+    .latest-news {
+        order: 7;
+        flex-basis: 100%;
+        
     }
+
+    .latest-news-info img {
+        width: 100px;
+        height: 80px;
+    }
+
+    .latest-news-info {
+        font-size: 0.60em;
+    }
+
+    /*Footer Section*/
+
+    #footer {
+        order: 8;
+        flex-basis: 100%;
+        font-size: 1.1em;
+        margin-top: 0.1.em;
+    }
+
+    
 }
 
 
