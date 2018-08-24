@@ -34,6 +34,7 @@ body {
     display: flex;
     justify-content: space-around;
     padding: 0.25em;
+    margin-top: 0.75em;
 }
 
 #nav-bar a {
@@ -51,7 +52,7 @@ body {
     background-size: cover;
     flex-direction: column;
     justify-content: flex-end;
-    margin-top: 2em;
+    margin-top: 0.25em;
 }
 
 .breaking-news-items {
@@ -68,8 +69,7 @@ body {
     justify-content: space-between;
     align-items: baseline;
     font-size: 0.75em;
-    margin-top: 0.25em;
-    padding: 0;
+    padding: 0 0.75em 0 0.75em;
 }
 
 .news {
@@ -82,8 +82,8 @@ body {
 .news p {
     width: 100%;
     box-shadow: 0 2px 5px -2px gray;
-    font-size: 0.75em;
     margin-left: 2px;
+    font-size: 0.75em;
 }
 
 /*Scorecard Section*/
@@ -93,6 +93,7 @@ body {
     justify-content: space-around;
     flex-direction: row;
     font-size: 0.80em;
+    background-color: rgb(37, 34, 185);
 }
 
 .scores-container {
@@ -101,6 +102,15 @@ body {
     justify-content: space-around;
     font-size: 0.75em;
 }
+
+.scores-container .scores .scores-left {
+    text-align: right;
+}
+
+.scores-container .scores .scores-right {
+    text-align: left;
+}
+
 
 /*Weather Section*/
 
@@ -136,10 +146,9 @@ body {
 .latest-news-headings {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     font-size: 0.75em;
-    margin-top: 2em;
-    padding: 1em;
+    padding: 0 0.75em 0 0.75em;
 }
 
 .latest-news-info {
@@ -160,10 +169,168 @@ body {
 #footer {
    display: flex;
    justify-content: space-around; 
+   box-shadow: 0 1px 4px -2px black, 0 -1px 4px -2px black;
+   padding: 2px;
 }
 
 #footer a {
     text-decoration: none;
-    color: gray;
+    color: black;
     font-size: 0.80em;
+}
+
+/*Media Queries*/
+
+
+/*Medium Sized Screens*/
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    /*Global*/
+    
+    body {
+        width: 800px;
+        margin: auto;
+    }
+
+    /*Header Section*/
+
+    #header {
+        justify-content: center;
+        padding: 0.25em;
+    }
+
+    /*Navigation Section*/
+
+    #nav-bar {
+        margin: 0.50em;
+    }
+
+    /*Breaking News Section*/
+
+    .breaking-news {
+        margin-top: 0.25em;
+    }
+
+    .breaking-news-items {
+        height: 60px;
+        padding: 0.75em;
+    }
+
+    /*Latest News*/
+
+    .latest-news-info img {
+        width: 80px;
+        height: 60px;
+    }
+}
+
+
+/*Large Desktop Sized Screens*/
+
+@media screen and (min-width: 1024px) {
+
+    /*Global*/
+
+    body {
+        width: 1000px;
+        margin: auto;
+    }
+
+    /*Header Section*/
+
+    #header {
+        justify-content: flex-start;
+        padding: 0.50em;
+    }
+
+    /*Navigation Section*/
+
+    #nav-bar {
+        font-size: 1.25em;
+        padding: 0.75em;
+    }
+
+    /*Breaking News Section*/ 
+
+    .breaking-news {
+        margin-top: 0;
+        background-position: 0 40%;
+    }
+
+    .breaking-news-items {
+        height: 60px;
+        font-size: 0.80em;
+        color: gray;
+        background-color: white;
+    }
+
+    /*Daily News Section*/
+
+    .daily-news .news {
+        font-size: 1.25em;
+    }
+
+    /*Scorecard Section*/ 
+
+    .scorecard .score-headings {
+        font-size: 1.1em;
+        height: 40px;
+        color: gray;
+        background-color: white;
+    }
+
+    .scorecard .scores-container {
+        justify-content: space-between;
+    }
+
+    .scorecard .scores-container .scores {
+        font-size: 1.25em;
+    }
+
+    /*Weather Section*/
+
+    .weather-headings {
+        font-size: 0.90em;
+    }
+
+    .weather-imgs .current-weather img {
+        width: 200px;
+        height: auto;
+    }
+
+    .weather-imgs .current-weather h5 {
+        font-size: 1em;
+    }
+
+    .weather-imgs .weekly-weather {
+        font-size: 1.25em;
+    }
+
+    .weather-imgs .weekly-weather img {
+        width: 100px;
+        height: auto;
+    }
+
+    /*Latest News Section*/
+
+    .latest-news-headings {
+        margin-top: 0.5em;
+    }
+
+    .latest-news-info {
+        font-size: 0.80em;
+    }
+
+    .latest-news-info img {
+        width: 125px;
+        height: 85px;
+    }
+
+    /*Footer Section*/
+
+    #footer {
+        margin: 0.75em;
+        padding: 0.25em;
+        font-size: 1.25em;
+    }
 }
