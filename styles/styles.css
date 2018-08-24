@@ -232,9 +232,11 @@ body {
         flex-basis: 60%;
     }
 
-    .breaking-news-items {
+    .breaking-news .breaking-news-items {
         height: 80px;
         padding: 0.75em;
+        background-color: rgb(0, 0, 0, 0.25);
+        color: white;
     }
 
     /*Daily News Section*/
@@ -281,7 +283,8 @@ body {
         order: 8;
         flex-basis: 100%;
         font-size: 1.1em;
-        margin-top: 0.1.em;
+        margin-top: 0px;
+        box-shadow: 1px 3px 3px -1px gray, 0px -1px 2px gray;
     }
 
     
@@ -395,5 +398,6 @@ body {
         margin: 0.75em;
         padding: 0.25em;
         font-size: 1.25em;
+        box-shadow: 1px 3px 3px -1px gray, 0px -1px 2px gray;
     }
 }
