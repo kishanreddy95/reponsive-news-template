@@ -99,17 +99,26 @@ body {
 .scores-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     font-size: 0.75em;
 }
 
-.scores-container .scores .scores-left {
-    text-align: right;
+.scores-container .scores {
+    flex-basis: 25%;
+    text-align: center; 
 }
 
-.scores-container .scores .scores-right {
+.scores-container .scores-left {
+    flex-basis: 12.5%;
+    text-align: right;
+    margin-right: 1em;
+}
+
+.scores-container .scores-right {
+    flex-basis: 12.5%;
     text-align: left;
 }
+
+
 
 
 /*Weather Section*/
@@ -191,6 +200,8 @@ body {
         width: 800px;
         margin: auto;
     }
+
+    
 
     /*Header Section*/
 
@@ -283,8 +294,8 @@ body {
         justify-content: space-between;
     }
 
-    .scorecard .scores-container .scores {
-        font-size: 1.25em;
+    .scorecard .scores-container {
+        font-size: 0.85em;
     }
 
     /*Weather Section*/
