@@ -1,57 +1,4 @@
 /*Global Styles*/
-<<<<<<< HEAD
-body {
-    padding: 0;
-    margin: 0;
-    font-family: "Georgia";
-}
-
-.container-main {
-    width: 1200px;
-    margin: 0 auto;
-}
-
-.left {
-    float: left;
-    margin: 5px 0 0 5px;
-}
-
-.right {
-    float: right;
-    margin: 5px 5px 0 0;
-}
-
-
-/* Header */
-
-#header {
-    overflow: hidden;
-    box-shadow: 0 3px 2px -2px gray;
-}
-
-#header .head-images, #header h1 {
-    float: left;
-    margin: 5px;
-}
-
-#header .head-images {
-    padding: 0 0 10px 40px;
-}
-
-#header h1 {
-    padding: 50px;
-    font-size: 60px;
-    text-align:center;
-    font-family: "Arial";
-    font-weight: normal;
-}
-
-/*Header Navbar*/
-
-#nav-bar {
-    text-align: center;
-    margin: 20px 0 10px 0;
-=======
 
 body {
     width: 480px;
@@ -88,160 +35,16 @@ body {
     justify-content: space-around;
     padding: 0.25em;
     margin-top: 0.75em;
->>>>>>> 2d585146bc41beeb8a7659a84d509dc8d6581fa5
 }
 
 #nav-bar a {
     text-decoration: none;
-<<<<<<< HEAD
-    padding: 0 80px 0 40px;
-    color: black;
-=======
     color: black;
     font-size: 0.75em;
->>>>>>> 2d585146bc41beeb8a7659a84d509dc8d6581fa5
 }
 
 /*Breaking News Section*/
 
-<<<<<<< HEAD
-.breaking-news {
-    position: relative;
-    width: auto;
-    height: 400px;
-    background-image: url(../images/dog.jpg);
-    background-size: cover;
-    background-position: 60% 45%;
-}
-
-.text {
-    position: absolute;
-    bottom: 0;
-    padding: 5px;
-    margin: 2px;
-    background-color: white;
-    color: grey;
-}
-
-
-/*Daily News Section*/
-
-.daily-news-heading {
-    overflow: hidden;
-    box-shadow: 0 2px 2px -2px black;
-    margin-top: 30px;
-}
-
-
-.daily-news .news {
-    padding: 10px;
-    box-shadow: 0 2px 5px -2px gray;
-}
-
-
-/*Scorecard Section*/
-
-#score-table {
-    width: 100%;
-    height: auto;
-    padding: 5px;
-    margin-top: 40px;
-}
-
-#score-table .score-title{
-    color: gray;
-}
-
-#score-table .left {
-    text-align: left;
-    padding: 5px;
-}
-
-#score-table td {
-    text-align: center;
-    padding: 5px;
-}
-
-
-/*Weather Section*/
-
-#weather {
-    margin-top: 20px;
-}
-
-#weather .weather-titles h2, p {
-    padding: 0;
-    margin: 0;
-}
-
-.weather-container .current-weather {
-    padding: 5px;
-    margin: 5px 0 10px 0;
-    overflow: hidden;
-}
-
-.current-weather .current-weather-div {
-    float: left;
-}
-
-#weather .weekly-weather {
-    overflow: hidden;
-    margin: 10px 0 10px 0;
-    text-align: center;
-}
-
-#weather .weekly-weather .days {
-    float: left;
-    margin: 0 25px 0 25px;
-}
-
-#weather .weather-image {
-    width: 180px;
-    height: 180px;
-}
-
-
-/*Latest News Section*/
-
-#latest-news {
-    margin-top: 30px;
-}
-
-#latest-news .latest-news-title {
-    overflow: hidden;
-    box-shadow: 0 2px 2px -2px black;
-}
-
-#latest-news .latest-news-info {
-    overflow: hidden;
-    margin: 20px;
-}
-
-#latest-news .latest-news-img {
-    float: left;
-    margin: 5px;
-}
-
-#latest-news .latest-news-img img {
-    width: 120px;
-    height: 80px;
-}
-
-/*Footer*/
-
-#footer {
-    overflow: hidden;
-    margin: 10px;
-    box-shadow: 0 4px 2px -2px gray, 0 -4px 2px -2px gray;
-}
-
-#footer a {
-    float: left;
-    text-decoration: none;
-    text-align: left;
-    color: black;
-    padding: 20px;
-=======
 /* .breaking-news {
     display: flex;
     height: 400px;
@@ -650,5 +453,4 @@ body {
         font-size: 1.25em;
         box-shadow: 1px 3px 3px -1px gray, 0px -1px 2px gray;
     }
->>>>>>> 2d585146bc41beeb8a7659a84d509dc8d6581fa5
 }
