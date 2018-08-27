@@ -1,4 +1,5 @@
 /*Global Styles*/
+<<<<<<< HEAD
 body {
     padding: 0;
     margin: 0;
@@ -50,16 +51,60 @@ body {
 #nav-bar {
     text-align: center;
     margin: 20px 0 10px 0;
+=======
+
+body {
+    width: 480px;
+    margin: 2em auto;
+}
+
+.container-main {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Header Section*/
+
+#header {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: space-around; 
+    box-shadow: 0 2px 2px -2px black;     
+}
+
+#header h1{
+  margin: 1em 0.75em 0 0;
+}
+
+#header img {
+    padding: 0.25em;
+}
+
+/*Navigation Section*/
+
+#nav-bar {
+    display: flex;
+    justify-content: space-around;
+    padding: 0.25em;
+    margin-top: 0.75em;
+>>>>>>> 2d585146bc41beeb8a7659a84d509dc8d6581fa5
 }
 
 #nav-bar a {
     text-decoration: none;
+<<<<<<< HEAD
     padding: 0 80px 0 40px;
     color: black;
+=======
+    color: black;
+    font-size: 0.75em;
+>>>>>>> 2d585146bc41beeb8a7659a84d509dc8d6581fa5
 }
 
 /*Breaking News Section*/
 
+<<<<<<< HEAD
 .breaking-news {
     position: relative;
     width: auto;
@@ -196,4 +241,414 @@ body {
     text-align: left;
     color: black;
     padding: 20px;
+=======
+/* .breaking-news {
+    display: flex;
+    height: 400px;
+    background-image: url(../images/dog.jpg);
+    background-size: cover;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 0.25em;
+} */
+
+
+.breaking-news img {
+    position: relative;
+    width: 500px;
+    height: auto;
+}
+
+.breaking-news-items {
+    width: 500px;
+    /* margin: 0 5.5% 0 0; */
+    position: absolute;
+    bottom: 1em;
+    font-size: 0.75em;
+    background-color: rgb(180, 171, 171);
+}
+
+/*Daily News Section*/
+
+.daily-news-titles {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 0.75em;
+    padding: 0 0.75em 0 0.75em;
+    box-shadow: 0 2px 5px -2px gray;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2px;
+}
+
+.news p {
+    width: 100%;
+    box-shadow: 0 2px 5px -2px gray;
+    margin-left: 2px;
+    font-size: 0.75em;
+}
+
+/*Scorecard Section*/
+
+.scorecard .score-headings {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    font-size: 0.80em;
+    background-color: rgb(37, 34, 185);
+}
+
+.scores-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.75em;
+}
+
+.scores-container .scores {
+    flex-basis: 25%;
+    text-align: center; 
+}
+
+.scores-container .scores-left {
+    flex-basis: 12.5%;
+    text-align: right;
+    margin-right: 1em;
+}
+
+.scores-container .scores-right {
+    flex-basis: 12.5%;
+    text-align: left;
+}
+
+
+
+
+/*Weather Section*/
+
+.weather-headings {
+    display:flex;
+    flex-direction: column;
+    margin: 1em 0 0 1em;
+    font-size: 0.80em;
+}
+
+.weather p,h3 {
+    margin: 0;
+}
+
+.current-weather {
+    display: flex;
+    align-items: center;
+}
+
+.weather-imgs .weekly-weather {
+    display: flex;
+    justify-content: space-around;
+    margin: 2em 0 0 0;
+}
+
+.weekly-weather p {
+    text-align: center;
+    font-size: 0.75em;
+}
+
+/*Latest News Section*/
+
+.latest-news-headings {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 0.75em;
+    padding: 0 0.75em 0 0.75em;
+    box-shadow: 0 2px 5px -2px gray;
+}
+
+.latest-news-info h4 {
+    margin-bottom: 0;
+}
+
+.latest-news-info p {
+    margin-top: 0.25em;
+}
+
+.latest-news-info {
+    float: left;
+    font-size: 0.70em;
+    padding: 0.10em;
+}
+
+.latest-news-info img{
+    float: left;
+    width: 20%;
+    height: 60px;
+    width: 80px;
+    padding: 10px 10px 0 0;
+}
+
+/*Footer Section*/
+
+#footer {
+   display: flex;
+   justify-content: space-around; 
+   box-shadow: 1px 3px 3px -1px gray, 0px -1px 2px gray;
+   padding: 2px;
+}
+
+#footer a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.80em;
+}
+
+/*Media Queries*/
+
+
+/*Medium Sized Screens*/
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    /*Global*/
+    
+    body {
+        width: 800px;
+        margin: auto;
+    }
+
+    .container-main {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+
+    /*Header Section*/
+
+    #header {
+        justify-content: flex-start;
+        padding: 0.25em;
+        order: 1;
+        flex-basis: 100%;
+    }
+
+    /*Navigation Section*/
+
+    #nav-bar {
+        margin: 0.50em;
+        order:2;
+        flex-basis: 100%;
+    }
+
+    /*Breaking News Section*/
+
+    .breaking-news img {
+        position: relative;
+        width: 400px;
+        height: auto;
+    }
+    
+    .breaking-news-items {
+        width: 400px;
+        /* margin: 0 5.5% 0 0; */
+        position: absolute;
+        bottom: 8em;
+        font-size: 0.75em;
+        background-color: rgb(180, 171, 171);
+    }
+
+    .breaking-news {
+        margin-top: 0.25em;
+        order:3;
+        flex-basis: 60%;
+    }
+
+    .breaking-news .breaking-news-items {
+        height: 80px;
+        background-color: rgb(0, 0, 0, 0.25);
+        color: white;
+    }
+
+    /*Daily News Section*/
+
+    .daily-news {
+        order: 5;
+        flex-basis: 100%;
+    }
+
+    /*Scorecard Section*/
+
+    .scorecard {
+        order: 6;
+        flex-basis: 100%;
+    }
+
+    /*Weather Section*/
+
+    .weather {
+        order: 4;
+        flex-basis: 40%;
+    }
+
+    /*Latest News*/
+
+    .latest-news {
+        order: 7;
+        flex-basis: 100%;
+        
+    }
+
+    .latest-news-info img {
+        width: 100px;
+        height: 80px;
+    }
+
+    .latest-news-info {
+        font-size: 0.80em;
+    }
+
+    /*Footer Section*/
+
+    #footer {
+        order: 8;
+        flex-basis: 100%;
+        font-size: 1.1em;
+        margin-top: 0px;
+        box-shadow: 1px 3px 3px -1px gray, 0px -1px 2px gray;
+    }
+
+    
+}
+
+
+/*Large Desktop Sized Screens*/
+
+@media screen and (min-width: 1024px) {
+
+    /*Global*/
+
+    body {
+        width: 1000px;
+        margin: auto;
+    }
+
+    /*Header Section*/
+
+    #header {
+        justify-content: flex-start;
+        padding: 0.50em;
+    }
+
+    /*Navigation Section*/
+
+    #nav-bar {
+        font-size: 1.25em;
+        padding: 0.75em;
+    }
+
+    /*Breaking News Section*/ 
+
+    .breaking-news img {
+        position: relative;
+        width: 100%;
+        height: 75%;
+    }
+    
+    .breaking-news-items {
+        width: 1000px;
+        /* margin: 0 5.5% 0 0; */
+        position: absolute;
+        bottom: -4em;
+        font-size: 1em;
+        background-color: rgb(180, 171, 171);
+    }
+
+    .breaking-news {
+        margin-top: 0;
+        background-position: 0 40%;
+    }
+
+    .breaking-news-items {
+        height: 100px;
+        font-size: 0.80em;
+        color: gray;
+        background-color: white;
+    }
+
+    /*Daily News Section*/
+
+    .daily-news {
+        margin-top: 1em;
+    }
+
+    .daily-news .news {
+        font-size: 1.25em;
+    }
+
+    /*Scorecard Section*/ 
+
+    .scorecard .score-headings {
+        font-size: 1.1em;
+        height: 40px;
+        color: gray;
+        background-color: white;
+    }
+
+    .scorecard .scores-container {
+        justify-content: space-between;
+    }
+
+    .scorecard .scores-container {
+        font-size: 0.85em;
+    }
+
+    /*Weather Section*/
+
+    .weather-headings {
+        font-size: 0.90em;
+    }
+
+    .weather-imgs .current-weather img {
+        width: 200px;
+        height: auto;
+    }
+
+    .weather-imgs .current-weather h5 {
+        font-size: 1em;
+    }
+
+    .weather-imgs .weekly-weather {
+        font-size: 1.25em;
+    }
+
+    .weather-imgs .weekly-weather img {
+        width: 100px;
+        height: auto;
+    }
+
+    /*Latest News Section*/
+
+    .latest-news-headings {
+        margin-top: 0.5em;
+    }
+
+    .latest-news-info {
+        font-size: 0.75em;
+    }
+
+    .latest-news-info img {
+        width: 125px;
+        height: 85px;
+    }
+
+    /*Footer Section*/
+
+    #footer {
+        margin: 0.75em;
+        padding: 0.25em;
+        font-size: 1.25em;
+        box-shadow: 1px 3px 3px -1px gray, 0px -1px 2px gray;
+    }
+>>>>>>> 2d585146bc41beeb8a7659a84d509dc8d6581fa5
 }
